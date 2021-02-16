@@ -1,9 +1,8 @@
 FROM   registry.access.redhat.com/ubi8/ubi:8.0
 
 MAINTAINER   Red Hat Training <training@redhat.com>
-LABEL	io.k8s.description="A Basic Wildfly Java HTTP Server"
-	io.k8s.display="A Basic Wildfly Java HTTP Server"
-	io.openshift.expose-services="8080:http"
+LABEL	io.k8s.description="A Basic Wildfly Java HTTP Server" \
+	io.openshift.expose-services="8080:http" \
 	io.openshift.tags="wildfly, java"
 
 # command line options to pass to the JVM
